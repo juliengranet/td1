@@ -60,7 +60,7 @@ développement intégré (comme *spyder3* ou *pycharm*).
 Détaillez ci-dessous votre choix d'environnement de travail et les
 raisons de ce choix.
 
-*...à compléter...*
+*...à compléter*
 
 4. Puisque vous avez apporté des modifications cohérentes (réponse à la
 question 3. ci-dessus), validez ces modifications (*git add* et *git
