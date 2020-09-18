@@ -30,7 +30,7 @@ def prim_trig(x):
 def exp(x):
     return np.exp(x)
 def pol(x):
-    return 1/(1+x^2)
+    return 1/(1+x**2)
 def prim_pol(x):
     return math.atan(x)
 # Définir ici les autres fonctions utilisées pour des tests et leurs
