@@ -36,7 +36,7 @@ for k in np.arange(3):
                                                     # une primitive
     # Boucle sur les découpages
     for i in np.arange(k_max):
-        Q[i] = q.pt_milieu(f.monome,a,b,N[i])
+        Q[i] = q.met_trapezes(f.monome,a,b,N[i])
         E[i] = I-Q[i]
         print ("{:5d} {:14.8g} {:14.8g} {:14.8g}".format(N[i],I,Q[i],E[i]))
     # On peut tracer les courbes d'erreur en fonction de N, en échelles
@@ -45,12 +45,12 @@ for k in np.arange(3):
 
 # Les trois courbes (pour 1, x, x^2) ont été tracées, on ajoute titre,
 # légende...
-plt.title("Test de convergence méthode du point milieu sur 1, x, x^2")
+plt.title("Test de convergence méthode des trapèzes sur 1, x, x^2")
 plt.legend()
 plt.xlabel("N")
 plt.ylabel("Erreur")
 plt.grid()
 # Utilisez une des deux lignes ci-dessous pour voir à l'écran ou enregistrer le graphique
 # plt.show() 
-plt.savefig("../img/test_1.png")
+plt.savefig("../img/test_2.png")
 
