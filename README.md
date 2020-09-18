@@ -151,6 +151,10 @@ et commet une erreur équivalente à $h^2$ (ou encore
 $N^{-2}$). Reproduire ci-dessous les tableaux d'erreurs qui démontrent
 ce résultat, et inclure le graphe de convergence des approximations.
 
+(./img/test_2.png)
+
+
+
 3. On veut tester nos formules pour d'autres fonctions que les
 polynômes. Pour cela, on ajoute les fonctions souhaitées dans le fichier
 [./src/fonctions_test.py](./src/fonctions_test.py). En suivant le modèle
