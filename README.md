@@ -86,11 +86,17 @@ Quel est la nature (langage ?) et le rÃ´le (texte, programme, autre) de
 chacun des fichiers prÃ©sents ?
 
 *1.Le rôle du fichier README.md est de décrire la nature des divers fichiers accessibles à l'utilisateur, il est écrit en Markdown
+
 2.test_1.png est un graphique représentant la convergence de la méthode du point milieu en fonction du degré du monôme, l'image est donnée par un code en python
+
 3.fonction_test.py est un code en python qui définit des fonctions vérifiant la précision et l'ordre de convergeance des formules de quadratures
+
 4.quadratures.py est un code en python donnant la quadrature de f par la méthode du point milieu
+
 5.test.py est un code en python qui compare l'application des méthodes précédentes sur l'intervalle [0;1] de différents monômes. Le code créer ensuite l'image test_1.png pour comparer la convergence.
+
 6.memo_quadratures.tex en est fichier écrit en LaTeX qui explique les propriétés des divers formules de quadratures
+
 7.memo_quadratures.pdf est la version pdf du fichier précédent.*
 
 **Pensez Ã  valider rÃ©guliÃ¨rement votre travail, et Ã  pousser les
