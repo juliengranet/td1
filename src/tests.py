@@ -36,7 +36,7 @@ for k in np.arange(3):
                                                     # une primitive
     # Boucle sur les découpages
     for i in np.arange(k_max):
-        Q[i] = q.pt_milieu(f.monome,a,b,N[i])
+        Q[i] = q.met_trapezes(f.monome,a,b,N[i])
         E[i] = I-Q[i]
         print ("{:5d} {:14.8g} {:14.8g} {:14.8g}".format(N[i],I,Q[i],E[i]))
     # On peut tracer les courbes d'erreur en fonction de N, en échelles

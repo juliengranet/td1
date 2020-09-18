@@ -13,3 +13,12 @@ def pt_milieu(f,a,b,n):
     return Q
 
 # Définir ci-dessous les autres méthodes de quadrature
+
+def met_trapezes(f,a,b,n):
+    h=(b-a)/n
+    xm=(a+np.arange(n)*h)
+    Q=(h/2)*(np.sum(f(xm)))
+    for i in range(len(xm)-1):
+        Q=Q+(h/2)*(f(xm[i+1])) #en pratique on s'en fiche car l'intervalle commence à 0
+    return Q                   #mais dans le cas où ce ne serait pas le cas il faudrait faire ça
+
