@@ -298,8 +298,64 @@ On voit que la pente de la courbe est d'environ 7. On peut donc dire que l'ordre
 
 6. On peut maintenant comparer l'ensemble des méthodes programmées, pour
 chacune des fonctions de la question 3. Produisez les tableaux et
-graphes d'erreurs que vous jugez utilse et discutez les résultats
+graphes d'erreurs que vous jugez utiles et discutez les résultats
 obtenus.
+
+  ##Tableau comparatif d'erreur pour la méthode de Simpson
+
+  n | abs(x)     | cos(x)        | exp(x)         | 1/(1+x^2)
+--- | ---------- |  ----------   | ----------     | ---------- 
+1   | 0.33333333 | 0.010592901   | 0.011651369    | 0.09587034
+2   |          0 | 0.00060221486 | 0.00079244459  | 0.0041296601
+4   |          0 | 3.6795715e-05 | 5.0629955e-05  | 1.2013069e-05
+8   |          0 | 2.2868891e-06 | 3.182017e-06   | 7.5565543e-08
+16  |          0 | 1.4273113e-07 | 1.9915346e-07  | 1.1824852e-09
+32  |          0 | 8.917584e-09  | 1.2451432e-08  | 1.847833e-11
+64  |          0 | 5.5730043e-10 | 7.7828233e-10  | 2.8865799e-13
+128 |          0 | 3.4830583e-11 | 4.8643756e-11  | 4.2188475e-15
+256 |          0 | 2.1769253e-12 | 3.0406788e-12  | 0
+512 |          0 | 1.358913e-13  | 1.9007018e-13  | 0
+
+![Illustration de l'ordre de la méthode de Simpson](./img/test_simpson6.png) 
+
+
+  ##Tableau comparatif d'erreur pour la méthode de Gauss-Legendre à 2 points
+
+  n | abs(x)     | cos(x)        | exp(x)         | 1/(1+x^2)
+--- | ---------- |  ----------   | ----------     | ---------- 
+1   | 0.15470054 | 0.0071183142  | 0.0077062994   | 0.070796327
+2   |          0 | 0.00040227434 | 0.00052724975  | 0.002974165
+4   |          0 | 2.4542649e-05 | 3.3736567e-05  | 8.6197206e-06
+8   |          0 | 1.5247818e-06 | 2.1210817e-06  | 5.3734255e-08
+16  |          0 | 9.5157036e-08 | 1.3276486e-07  | 8.4087715e-10
+32  |          0 | 5.9451022e-09 | 8.3008906e-09  | 1.3140156e-11
+64  |          0 | 3.7153436e-10 | 5.188534e-10   | 2.056133e-13
+128 |          0 | 2.3220093e-11 | 3.2428726e-11  | 3.3306691e-15
+256 |          0 | 1.4512835e-12 | 2.0268232e-12  | 0
+512 |          0 | 9.0816243e-14 | 1.2656542e-13  | 0
+
+![Illustration de l'ordre de la méthode de Gauss-Legendre à 2 points](./img/test_gl2.png) 
+
+
+  ##Tableau comparatif d'erreur pour la méthode de Gauss-Legendre à 3 points
+
+  n | abs(x)     | cos(x)        | exp(x)         | 1/(1+x^2)
+--- | ---------- |  ----------   | ----------     | ---------- 
+1   | 0.13933703 | 6.1578111e-05 | 6.5458608e-05  | 0.012537007
+2   |          0 | 8.6398956e-07 | 1.127251e-06   | 0.00026225681
+4   |          0 | 1.3155354e-08 | 1.8062859e-08  | 7.1560348e-07
+8   |          0 | 2.0424085e-10 | 2.840328e-10   | 3.6249648e-09
+16  |          0 | 3.185896e-12  | 4.4448889e-12  | 5.6756599e-11
+32  |          0 | 4.9737992e-14 | 6.9722006e-14  | 8.8684615e-13
+64  |          0 |             0 |              0 | 1.398881e-14
+128 |          0 |             0 |              0 | 0
+256 |          0 |             0 |              0 | 0
+512 |          0 |             0 |              0 | 0
+
+![Illustration de l'ordre de la méthode de Gauss-Legendre à 3 points](./img/test_gl36.png) 
+
+
+Les résultats sont plutôt prévisibles, on voit que plus l'ordre de la méthode est élevé, plus l'erreur va décroitre vite. Nous remarquons notamment que la méthode de Gauss-Legendre à 3 points nous permet d'atteindre une très bonne précision pour nos 4 fonctions avec seulement 64 points, tandis que la méthode des trapèzes nous donne un résultat un milliard de fois moins précis tout en demandant 8 fois plus de points. (voir question 4)
 
 **N'oubliez pas de valider les modifications faites le plus souvent
 possible (*validations atomiques*), et de documenter intelligiblement

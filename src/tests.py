@@ -40,7 +40,7 @@ Q6 = np.zeros_like(N,dtype=np.float)
 E6 = np.zeros_like(N,dtype=np.float)
 Q7 = np.zeros_like(N,dtype=np.float)
 E7 = np.zeros_like(N,dtype=np.float)
- #Pour le monome de degré 0,1,2: f(x) = 1,x,x^2
+# Pour le monome de degré 0,1,2: f(x) = 1,x,x^2
 #for k in np.arange(3):
 #    print("test pour le degré {}".format(k))
 #    f.degre = k # degré des monomes à tester
@@ -64,7 +64,7 @@ E7 = np.zeros_like(N,dtype=np.float)
 #plt.ylabel("Erreur")
 #plt.grid()
 ## Utilisez une des deux lignes ci-dessous pour voir à l'écran ou enregistrer le graphique
-#plt.savefig("../img/test_2.png")
+#plt.savefig("../img/test_trapezes.png")
 #plt.show() 
 
 
