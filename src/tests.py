@@ -41,7 +41,7 @@ E6 = np.zeros_like(N,dtype=np.float)
 Q7 = np.zeros_like(N,dtype=np.float)
 E7 = np.zeros_like(N,dtype=np.float)
  #Pour le monome de degré 0,1,2: f(x) = 1,x,x^2
-for k in np.arange(7):
+for k in np.arange(3):
     print("test pour le degré {}".format(k))
     f.degre = k # degré des monomes à tester
     I = f.primitive_monome(b)-f.primitive_monome(a) # intégrale exacte
@@ -49,7 +49,7 @@ for k in np.arange(7):
                                                     # une primitive
     # Boucle sur les découpages
     for i in np.arange(k_max):
-        Q[i] = q.met_GL(f.monome,a,b,N[i],3)
+        Q[i] = q.met_trapezes(f.monome,a,b,N[i])
         E[i] = abs(I-Q[i])
         print ("{:5d} {:14.8g} {:14.8g} {:14.8g}".format(N[i],I,Q[i],E[i]))
     # On peut tracer les courbes d'erreur en fonction de N, en échelles
@@ -58,13 +58,13 @@ for k in np.arange(7):
 
 # Les trois courbes (pour 1, x, x^2) ont été tracées, on ajoute titre,
 # légende...
-plt.title("Test de convergence méthode de Gauss-Legendre à 3 points")
+plt.title("Test de convergence méthode des trapèzes")
 plt.legend()
 plt.xlabel("N")
 plt.ylabel("Erreur")
 plt.grid()
 # Utilisez une des deux lignes ci-dessous pour voir à l'écran ou enregistrer le graphique
-plt.savefig("../img/test_GL3.png")
+plt.savefig("../img/test_2.png")
 plt.show() 
 
 

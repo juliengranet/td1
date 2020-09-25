@@ -152,7 +152,22 @@ et commet une erreur équivalente à $h^2$ (ou encore
 $N^{-2}$). Reproduire ci-dessous les tableaux d'erreurs qui démontrent
 ce résultat, et inclure le graphe de convergence des approximations.
 
+n   | erreur x^0 | erreur x^1 | erreur x^2
+--- | ---------- | ---------- | ----------
+1   |          0 |          0 | 1.3333333
+2   |          0 |          0 | 0.33333333
+4   |          0 |          0 | 0.083333333
+8   |          0 |          0 | 0.020833333
+16  |          0 |          0 | 0.0052083333
+32  |          0 |          0 | 0.0013020833
+64  |          0 |          0 | 0.00032552083
+128 |          0 |          0 | 8.1380208e-05
+256 |          0 |          0 | 2.0345052e-05
+512 |          0 |          0 | 5.086263e-06
+
 ![Illustration de l'ordre de la méthode des trapèzes](./img/test_2.png)
+
+On voit bien que la pente de l'erreur est de 2. La méthode des trapèzes est donc d'ordre 2.
 
 3. On veut tester nos formules pour d'autres fonctions que les
 polynômes. Pour cela, on ajoute les fonctions souhaitées dans le fichier
