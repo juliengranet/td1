@@ -81,7 +81,7 @@ for i in np.arange(k_max):
         E2[i] = abs(I2-Q2[i])
         Q3[i] = q.pt_milieu(f.pol,a,b,N[i])
         E3[i] = abs(I3-Q3[i])
-        Q4[i] = q.met_trapezes(f.abso,a,b,N[i])
+        Q4[i] = q.met_trapezes(f.abso,a,b,N[i],)
         E4[i] = abs(I0-Q4[i])
         Q5[i] = q.met_trapezes(f.trig,a,b,N[i])
         E5[i] = abs(I1-Q5[i])
