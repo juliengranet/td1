@@ -192,7 +192,7 @@ pour chacune de ces fonctions pour les deux méthodes.
 
 On remarque que ces graphes sont pratiquement identiques, les deux méthodes convergent donc à la même vitesse (elles sont donc d'ordre 2, d'après la question 2.)
 
-#Tableau comparatif d'erreur pour la méthode du point milieu
+##Tableau comparatif d'erreur pour la méthode du point milieu
 
   n | abs(x)     | cos(x)        | exp(x)         | 1/(1+x^2)
 --- | ---------- |  ----------   | ----------     | ---------- 
@@ -207,7 +207,7 @@ On remarque que ces graphes sont pratiquement identiques, les deux méthodes con
 256 |          0 | 4.2799504e-06 | 5.9773717e-06  | 2.5431315e-06
 512 |          0 | 1.0699862e-06 | 1.4943449e-06  | 6.3578288e-07
 
-#Tableau comparatif d'erreur pour la méthode des trapèzes
+##Tableau comparatif d'erreur pour la méthode des trapèzes
 
   n | abs(x)     | cos(x)        | exp(x)         | 1/(1+x^2)
 --- | ---------- |  ----------   | ----------     | ---------- 
