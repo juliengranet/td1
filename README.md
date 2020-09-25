@@ -60,7 +60,8 @@ développement intégré (comme *spyder3* ou *pycharm*).
 Détaillez ci-dessous votre choix d'environnement de travail et les
 raisons de ce choix.
 
-*J'ai choisi d'utiliser spyder3 pour effectuer le tp car c'est un logiciel que j'ai l'habitude d'utiliser pour coder en python depuis l'an dernier*
+J'ai choisi d'utiliser spyder3 pour effectuer le tp car c'est un logiciel que j'ai l'habitude d'utiliser pour coder en python depuis l'an dernier
+
 
 4. Puisque vous avez apporté des modifications cohérentes (réponse à la
 question 3. ci-dessus), validez ces modifications (*git add* et *git
@@ -85,19 +86,20 @@ ressembler à :
 Quel est la nature (langage ?) et le rôle (texte, programme, autre) de
 chacun des fichiers présents ?
 
-*1.Le r�le du fichier README.md est de d�crire la nature des divers fichiers accessibles � l'utilisateur, il est �crit en Markdown
+1.Le rôle du fichier README.md est de décrire la nature des divers fichiers accessibles à l'utilisateur, il est écrit en Markdown
 
-2.test_1.png est un graphique repr�sentant la convergence de la m�thode du point milieu en fonction du degr� du mon�me, l'image est donn�e par un code en python
+2.test_1.png est un graphique représentant la convergence de la méthode du point milieu en fonction du degré du monôme, l'image est donnée par un code en python
 
-3.fonction_test.py est un code en python qui d�finit des fonctions v�rifiant la pr�cision et l'ordre de convergeance des formules de quadratures
+3.fonction_test.py est un code en python qui définit des fonctions vérifiant la précision et l'ordre de convergeance des formules de quadratures
 
-4.quadratures.py est un code en python donnant la quadrature de f par la m�thode du point milieu
+4.quadratures.py est un code en python donnant la quadrature de f par la méthode du point milieu
 
-5.test.py est un code en python qui compare l'application des m�thodes pr�c�dentes sur l'intervalle [0;1] de diff�rents mon�mes. Le code cr�er ensuite l'image test_1.png pour comparer la convergence.
+5.test.py est un code en python qui compare l'application des méthodes précédentes sur l'intervalle [0;1] de différents monômes. Le code créer ensuite l'image test_1.png pour comparer la convergence.
 
-6.memo_quadratures.tex en est fichier �crit en LaTeX qui explique les propri�t�s des divers formules de quadratures
+6.memo_quadratures.tex en est fichier écrit en LaTeX qui explique les propriétés des divers formules de quadratures
 
-7.memo_quadratures.pdf est la version pdf du fichier pr�c�dent.*
+7.memo_quadratures.pdf est la version pdf du fichier précédent.
+
 
 **Pensez à valider régulièrement votre travail, et à pousser les
   changements sur le serveur (*git push*) de temps en temps et surtout à
@@ -151,8 +153,7 @@ et commet une erreur équivalente à $h^2$ (ou encore
 $N^{-2}$). Reproduire ci-dessous les tableaux d'erreurs qui démontrent
 ce résultat, et inclure le graphe de convergence des approximations.
 
-![Illustration de l'ordre de la méthode des trap�zes](./img/test_2.png)
-
+![Illustration de l'ordre de la mÃ©thode des trapèzes](./img/test_2.png)
 
 
 3. On veut tester nos formules pour d'autres fonctions que les
@@ -169,12 +170,17 @@ primitives
 l'erreur pour ces nouvelles fonctions integrées sur l'intervalle
 $[-1,1]$ avec les méthodes du point milieu et des trapèzes. Insérez
 l'image ci-dessous, et faites tous les commentaires utiles.
+
 Pour plus de précision, donnez un tableau comparatif des erreurs commise
 pour chacune de ces fonctions pour les deux méthodes.
 
-![Illustration de l'ordre de la méthode des trap�zes et du point commun](./img/test_3.png)
+![Illustration de l'ordre de la mÃ©thode des trapèzes et du point commun](./img/test_3.png)
 
+<<<<<<< HEAD
 On remarque que ces graphes sont pratiquement identiques, les deux m�thodes convergent donc � la m�me vitesse (elles sont de m�me ordre.)
+=======
+On remarque que ces graphes sont pratiquement identiques, les deux méthodes convergent donc à la même vitesse (elles sont de même ordre.)
+>>>>>>> 60a180d1675ec1083f1478a5dc77f8fdc34306cd
 
 
 5. Programmez maintenant la méthode de Simpson et les méthodes de
