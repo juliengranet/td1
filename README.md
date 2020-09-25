@@ -169,12 +169,13 @@ primitives
 l'erreur pour ces nouvelles fonctions integrÃ©es sur l'intervalle
 $[-1,1]$ avec les mÃ©thodes du point milieu et des trapÃ¨zes. InsÃ©rez
 l'image ci-dessous, et faites tous les commentaires utiles.
-
-![Illustration de l'ordre de la mÃ©thode des trapèzes et du point commun](./img/test_3_bis.png)
-
-On remarque une variation de pente entre les deux méthodes, la méthode du point milieu converge plus vite que celle des trapèzes
 Pour plus de prÃ©cision, donnez un tableau comparatif des erreurs commise
 pour chacune de ces fonctions pour les deux mÃ©thodes.
+
+![Illustration de l'ordre de la mÃ©thode des trapèzes et du point commun](./img/test_3.png)
+
+On remarque que ces graphes sont pratiquement identiques, elles convergent donc à la même vitesse (elles sont de même ordre.)
+
 
 5. Programmez maintenant la mÃ©thode de Simpson et les mÃ©thodes de
 Gauss-Legendre Ã  2 et 3 points (voir le document
