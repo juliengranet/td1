@@ -234,7 +234,7 @@ Gauss-Legendre à 2 et 3 points (voir le document
 polynomes de degré au plus 3 (Simpson, Gauss-Legendre à 2 points) ou 5
 (Gauss-Legendre à 3 points).
 
-  En dehors de ce qui me semble être des zéros machines (erreurs à 10^-17), les méthodes intègrent exactement les polynômes de degré 3 à 5.
+  En dehors de ce qui me semble être des zéros machines (erreurs à 10^-17), les méthodes intègrent exactement les polynômes de degré 3 à 5 (voir question suivante).
   
   3. Calculez numériquement l'ordre de convergence de ces méthodes
      (graphes et tableaux).
