@@ -40,7 +40,4 @@ def met_GL(f,a,b,n,o):
         xm1=a+(np.arange(n)+0.5)*h
         xm2=a+(np.arange(n)+(5+math.sqrt(15))/10)*h
         Q=(h/18)*np.sum(5*f(xm)+8*f(xm1)+5*f(xm2))
-    else:
-        print("o réprésente le nombre de points de la méthode, il doit être égal à 2 ou 3")
-        Q=0
     return Q

@@ -188,9 +188,68 @@ Gauss-Legendre à 2 et 3 points (voir le document
   2. Vérifiez numériquement que les formules intègrent exactement les
 polynomes de degré au plus 3 (Simpson, Gauss-Legendre à 2 points) ou 5
 (Gauss-Legendre à 3 points).
+
+  En dehors de ce qui me semble être des zéros machines (erreurs à 10^-17), les méthodes intègrent exactement les polynômes de degré 3 à 5.
   
   3. Calculez numériquement l'ordre de convergence de ces méthodes
      (graphes et tableaux).
+  
+  ## Méthode de Simpson
+  
+  n   | erreur x^2 | erreur x^3 | erreur x^4
+--- | ---------- | ---------- | ----------
+1   |          0 |          0 | 0.26666667
+2   |          0 |          0 | 0.016666667
+4   |          0 |          0 | 0.0010416667
+8   |          0 |          0 | 6.5104167e-05
+16  |          0 |          0 | 4.0690104e-06
+32  |          0 |          0 | 2.5431315e-07
+64  |          0 |          0 | 1.5894572e-08
+128 |          0 |          0 | 9.9341069e-10
+256 |          0 |          0 | 6.2088112e-11
+512 |          0 |          0 | 3.8804515e-12  
+
+![Illustration de l'ordre de la méthode de Simpson](./img/test_simpson.png) 
+
+On voit que la pente de la courbe est d'environ 4. On peut donc dire que l'ordre de convergence de la méthode de Simpson est de 4.
+
+  ## Méthode de Gauss-Legendre à 2 points
+  
+  n   | erreur x^2 | erreur x^3 | erreur x^4
+--- | ---------- | ---------- | ----------
+1   |          0 |          0 | 0.17777778
+2   |          0 |          0 | 0.011111111
+4   |          0 |          0 | 0.00069444444
+8   |          0 |          0 | 4.3402778e-05
+16  |          0 |          0 | 2.7126736e-06
+32  |          0 |          0 | 1.695421e-07
+64  |          0 |          0 | 1.0596381e-08
+128 |          0 |          0 | 6.6227368e-10
+256 |          0 |          0 | 4.1392223e-11
+512 |          0 |          0 | 2.5871527e-12 
+
+![Illustration de l'ordre de la méthode de Gauss-Legendre à 2 points](./img/test_GL2.png) 
+
+On voit que la pente de la courbe est d'environ 5. On peut donc dire que l'ordre de convergence de la méthode de Gauss-Legendre à 2 points est de 5.
+
+  ## Méthode de Gauss-Legendre à 3 points
+  
+  n   | erreur x^4 | erreur x^5 | erreur x^6
+--- | ---------- | ---------- | ----------
+1   |          0 |          0 | 0.045714286
+2   |          0 |          0 | 0.00071428571
+4   |          0 |          0 | 1.1160714e-05
+8   |          0 |          0 | 1.7438616e-07
+16  |          0 |          0 | 2.7247838e-09
+32  |          0 |          0 | 4.2574777e-11
+64  |          0 |          0 | 6.6530115e-13
+128 |          0 |          0 | 1.0436096e-14
+256 |          0 |          0 | 1.6653345e-16
+512 |          0 |          0 | 5.5511151e-17 
+
+![Illustration de l'ordre de la méthode de Gauss-Legendre à 3 points](./img/test_GL3.png) 
+
+On voit que la pente de la courbe est d'environ 7. On peut donc dire que l'ordre de convergence de la méthode de Gauss-Legendre à 3 points est de 7.     
 
 6. On peut maintenant comparer l'ensemble des méthodes programmées, pour
 chacune des fonctions de la question 3. Produisez les tableaux et
@@ -201,4 +260,3 @@ obtenus.
 possible (*validations atomiques*), et de documenter intelligiblement
 l'historique associé (les messages). Finalement, n'oubliez pas de
 pousser votre travail sur le dépôt.**
-TEEEEEEEST
