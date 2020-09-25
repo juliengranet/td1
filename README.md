@@ -226,17 +226,17 @@ On remarque que ces graphes sont pratiquement identiques, les deux méthodes con
 Gauss-Legendre à 2 et 3 points (voir le document
 [./tex/memo_quadratures.pdf](./tex/memo_quadratures.pdf)). 
 
-  1. Expliquez la stratégie de programmation retenue.
+6. Expliquez la stratégie de programmation retenue.
   
   J'ai codé séparément chaques méthodes en me basant sur le modèle de celle fournie dans le fichier de départ (méthode du point milieu)
   
-  2. Vérifiez numériquement que les formules intègrent exactement les
+7. Vérifiez numériquement que les formules intègrent exactement les
 polynomes de degré au plus 3 (Simpson, Gauss-Legendre à 2 points) ou 5
 (Gauss-Legendre à 3 points).
 
   En dehors de ce qui me semble être des zéros machines (erreurs à 10^-17), les méthodes intègrent exactement les polynômes de degré 3 à 5 (voir question suivante).
   
-  3. Calculez numériquement l'ordre de convergence de ces méthodes
+8. Calculez numériquement l'ordre de convergence de ces méthodes
      (graphes et tableaux).
   
   ## Méthode de Simpson
@@ -258,7 +258,7 @@ polynomes de degré au plus 3 (Simpson, Gauss-Legendre à 2 points) ou 5
 
 On voit que la pente de la courbe est d'environ 4. On peut donc dire que l'ordre de convergence de la méthode de Simpson est de 4.
 
-  ## Méthode de Gauss-Legendre à 2 points
+## Méthode de Gauss-Legendre à 2 points
   
   n   | erreur x^2 | erreur x^3 | erreur x^4
 --- | ---------- | ---------- | ----------
@@ -296,7 +296,7 @@ On voit que la pente de la courbe est d'environ 5. On peut donc dire que l'ordre
 
 On voit que la pente de la courbe est d'environ 7. On peut donc dire que l'ordre de convergence de la méthode de Gauss-Legendre à 3 points est de 7.     
 
-6. On peut maintenant comparer l'ensemble des méthodes programmées, pour
+9. On peut maintenant comparer l'ensemble des méthodes programmées, pour
 chacune des fonctions de la question 3. Produisez les tableaux et
 graphes d'erreurs que vous jugez utiles et discutez les résultats
 obtenus.
