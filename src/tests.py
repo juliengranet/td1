@@ -89,7 +89,7 @@ for i in np.arange(k_max):
         E6[i] = abs(I2-Q6[i])
         Q7[i] = q.met_trapezes(f.pol,a,b,N[i])
         E7[i] = abs(I3-Q7[i])
-        print ("{:5d} {:14.8g} {:14.8g} {:14.8g}".format(N[i],I0,Q[i],E[i]))
+        print ("{:5d} {:14.8g} {:14.8g} {:14.8g}".format(N[i],I0,Q[i],E7[i]))
 plt.subplot(211)
 plt.title("Erreur des fonctions pour la méthode du point milieu")
 plt.xlabel("N")
