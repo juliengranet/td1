@@ -174,7 +174,7 @@ pour chacune de ces fonctions pour les deux méthodes.
 
 ![Illustration de l'ordre de la méthode des trap�zes et du point commun](./img/test_3.png)
 
-On remarque que ces graphes sont pratiquement identiques, elles convergent donc � la m�me vitesse (elles sont de m�me ordre.)
+On remarque que ces graphes sont pratiquement identiques, les deux m�thodes convergent donc � la m�me vitesse (elles sont de m�me ordre.)
 
 
 5. Programmez maintenant la méthode de Simpson et les méthodes de
@@ -182,6 +182,8 @@ Gauss-Legendre à 2 et 3 points (voir le document
 [./tex/memo_quadratures.pdf](./tex/memo_quadratures.pdf)). 
 
   1. Expliquez la stratégie de programmation retenue.
+  
+  J'ai codé séparément chaques méthodes en me basant sur le modèle de celle fournie dans le fichier de départ (méthode du point milieu)
   
   2. Vérifiez numériquement que les formules intègrent exactement les
 polynomes de degré au plus 3 (Simpson, Gauss-Legendre à 2 points) ou 5
