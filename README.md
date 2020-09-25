@@ -60,7 +60,7 @@ développement intégré (comme *spyder3* ou *pycharm*).
 Détaillez ci-dessous votre choix d'environnement de travail et les
 raisons de ce choix.
 
-*J'ai choisi d'utiliser spyder3 pour effectuer le tp car c'est un logiciel que j'ai l'habitude d'utiliser pour coder en python depuis l'an dernier*
+J'ai choisi d'utiliser spyder3 pour effectuer le tp car c'est un logiciel que j'ai l'habitude d'utiliser pour coder en python depuis l'an dernier
 
 
 4. Puisque vous avez apporté des modifications cohérentes (réponse à la
@@ -86,7 +86,7 @@ ressembler à :
 Quel est la nature (langage ?) et le rôle (texte, programme, autre) de
 chacun des fichiers présents ?
 
-*1.Le rôle du fichier README.md est de décrire la nature des divers fichiers accessibles à l'utilisateur, il est écrit en Markdown
+1.Le rôle du fichier README.md est de décrire la nature des divers fichiers accessibles à l'utilisateur, il est écrit en Markdown
 
 2.test_1.png est un graphique représentant la convergence de la méthode du point milieu en fonction du degré du monôme, l'image est donnée par un code en python
 
@@ -98,7 +98,7 @@ chacun des fichiers présents ?
 
 6.memo_quadratures.tex en est fichier écrit en LaTeX qui explique les propriétés des divers formules de quadratures
 
-7.memo_quadratures.pdf est la version pdf du fichier précédent.*
+7.memo_quadratures.pdf est la version pdf du fichier précédent.
 
 
 **Pensez à valider régulièrement votre travail, et à pousser les
