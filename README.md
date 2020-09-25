@@ -167,7 +167,8 @@ n   | erreur x^0 | erreur x^1 | erreur x^2
 
 ![Illustration de l'ordre de la méthode des trapèzes](./img/test_2.png)
 
-On voit bien que la pente de l'erreur est de 2. La méthode des trapèzes est donc d'ordre 2.
+Il n'y a pas d'erreur en dessous du degré 2, ce qui confirme que la méthode permet d'intégrer exactement les polynômes d'un degré inférieur à 2.
+On voit que la pente de l'erreur est de 2. La méthode des trapèzes est donc d'ordre 2.
 
 3. On veut tester nos formules pour d'autres fonctions que les
 polynômes. Pour cela, on ajoute les fonctions souhaitées dans le fichier
@@ -183,15 +184,26 @@ primitives
 l'erreur pour ces nouvelles fonctions integrées sur l'intervalle
 $[-1,1]$ avec les méthodes du point milieu et des trapèzes. Insérez
 l'image ci-dessous, et faites tous les commentaires utiles.
-
 Pour plus de précision, donnez un tableau comparatif des erreurs commise
 pour chacune de ces fonctions pour les deux méthodes.
 
 ![Illustration de l'ordre de la méthode des trapèzes et du point commun](./img/test_3.png)
 
 
-On remarque que ces graphes sont pratiquement identiques, les deux méthodes convergent donc à la même vitesse (elles sont de même ordre.)
+On remarque que ces graphes sont pratiquement identiques, les deux méthodes convergent donc à la même vitesse (elles sont donc d'ordre 2, d'après la question 2.)
 
+  n | abs(x)     | cos(x)     | exp(x)         | 1/(1+x^2)
+--- | ---------- | ---------- | ----------     | ---------- 
+1   |          0 |          0 | 0.26666667     |
+2   |          0 |          0 | 0.016666667    |
+4   |          0 |          0 | 0.0010416667   |
+8   |          0 |          0 | 6.5104167e-05  |
+16  |          0 |          0 | 4.0690104e-06  |
+32  |          0 |          0 | 2.5431315e-07  |
+64  |          0 |          0 | 1.5894572e-08  |
+128 |          0 |          0 | 9.9341069e-10  |
+256 |          0 |          0 | 6.2088112e-11  |
+512 |          0 |          0 | 3.8804515e-12  |
 5. Programmez maintenant la méthode de Simpson et les méthodes de
 Gauss-Legendre à 2 et 3 points (voir le document
 [./tex/memo_quadratures.pdf](./tex/memo_quadratures.pdf)). 
