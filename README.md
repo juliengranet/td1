@@ -334,7 +334,7 @@ obtenus.
 256 |          0 | 1.4512835e-12 | 2.0268232e-12  | 0
 512 |          0 | 9.0816243e-14 | 1.2656542e-13  | 0
 
-![Illustration de l'ordre de la méthode de Gauss-Legendre à 2 points](./img/test_gl2.png) 
+![Illustration de l'ordre de la méthode de Gauss-Legendre à 2 points](./img/test_gl26.png) 
 
 
   ##Tableau comparatif d'erreur pour la méthode de Gauss-Legendre à 3 points
